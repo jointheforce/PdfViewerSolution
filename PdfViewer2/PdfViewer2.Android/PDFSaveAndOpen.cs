@@ -17,7 +17,7 @@ namespace PdfViewer2.Droid
 {
     public class PDFSaveAndOpen : IPDFSaveAndOpen
     {
-        public async Task SaveAndView(string fileName, String contentType, MemoryStream stream, PDFOpenContext context)
+        public async Task SaveAndView(string fileName, String contentType, byte[] bytesOfFile, PDFOpenContext context)
         {
             string exception = string.Empty;
             string root = null;
@@ -40,27 +40,27 @@ namespace PdfViewer2.Droid
             Java.IO.File file = new Java.IO.File(myDir, fileName);
 
 
-            //if (file.Exists()) file.Delete();
+            if (file.Exists()) file.Delete();
 
-            //try
-            //{
-            //    //string path = Android.OS.Environment.ExternalStorageDirectory.Path + "/PDFFiles/";
-            //    //string filePath = Path.Combine(path, "301_21.pdf");
-            //    ////"/storage/emulated/0/GIT_Succinctly.pdf"
-            //    //stream = new MemoryStream(System.IO.File.ReadAllBytes(file.AbsolutePath));
+            try
+            {
+                //string path = Android.OS.Environment.ExternalStorageDirectory.Path + "/PDFFiles/";
+                //string filePath = Path.Combine(path, "301_21.pdf");
+                ////"/storage/emulated/0/GIT_Succinctly.pdf"
+                //stream = new MemoryStream(System.IO.File.ReadAllBytes(file.AbsolutePath));
 
-                
-            //    //{/storage/emulated/0/PDFFiles/301_21.pdf}
-            //    FileOutputStream outs = new FileOutputStream(file);
-            //    outs.Write(stream.ToArray());
 
-            //    outs.Flush();
-            //    outs.Close();
-            //}
-            //catch (Exception e)
-            //{
-            //    exception = e.ToString();
-            //}
+                //{/storage/emulated/0/PDFFiles/301_21.pdf}
+                FileOutputStream outs = new FileOutputStream(file);
+                outs.Write(bytesOfFile);
+
+                outs.Flush();
+                outs.Close();
+            }
+            catch (Exception e)
+            {
+                exception = e.ToString();
+            }
 
             if (file.Exists() && contentType != "application/html")
             {

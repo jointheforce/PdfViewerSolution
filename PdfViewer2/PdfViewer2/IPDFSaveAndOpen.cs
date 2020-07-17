@@ -8,7 +8,7 @@ namespace PdfViewer2
 {
     public interface IPDFSaveAndOpen
     {
-        Task SaveAndView(string fileName, String contentType, MemoryStream stream, PDFOpenContext context);
+        Task SaveAndView(string fileName, String contentType, byte[] bytesOfFile, PDFOpenContext context);
     }
 
     /// <summary>
