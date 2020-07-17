@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfViewer2.Android", "PdfViewer2\PdfViewer2.Android\PdfViewer2.Android.csproj", "{4FB0D855-2BC9-4170-B064-33A91C161155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfViewer2", "PdfViewer2\PdfViewer2\PdfViewer2.csproj", "{AB3B4791-A591-4A62-A355-1EA1750024AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FB0D855-2BC9-4170-B064-33A91C161155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB0D855-2BC9-4170-B064-33A91C161155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB0D855-2BC9-4170-B064-33A91C161155}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4FB0D855-2BC9-4170-B064-33A91C161155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB0D855-2BC9-4170-B064-33A91C161155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB0D855-2BC9-4170-B064-33A91C161155}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AB3B4791-A591-4A62-A355-1EA1750024AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB3B4791-A591-4A62-A355-1EA1750024AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB3B4791-A591-4A62-A355-1EA1750024AB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AB3B4791-A591-4A62-A355-1EA1750024AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB3B4791-A591-4A62-A355-1EA1750024AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB3B4791-A591-4A62-A355-1EA1750024AB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D65473EF-5B4E-41E7-85AA-44DCF24F4C2B}
+	EndGlobalSection
+EndGlobal
